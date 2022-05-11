@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <link rel="stylesheet" href="Style.css" />
+</head>
+
+<body>
+    <h1>Escola Virtual</h1>
+    <h2>Formulário de Pré-Matrícula</h2>
+    <form method="GET">
+        <h4>Dados Pessoais:</h4>
+        <div class="input"> 
+            <label>Nome do Aluno</label>
+            <input required type="text" id="nome" />
+            <span class="erro"></span>
+        </div>
+        <div class="input">
+            <label>Nascimento (dd/mm/aaaa):</label>
+            <input type="date" id="date">
+            <span class="error"></span>
+        </div>
+        <div class="input"> 
+            <label>Nome da Mãe</label>
+            <input required type="text" id="nome" />
+            <span class="erro"></span>
+        </div>
+        <div class="input"> 
+            <label>Nome do Pai</label>
+            <input required type="text" id="nome" />
+            <span class="erro"></span>
+        </div>
+        <div class="input">
+            <label>Telefone</label>
+            <input required type="tel" id="tel" />
+            <span class="erro"></span>
+        </div>
+        <div class="input">
+            <label>E-Mail</label>
+            <input required type="email " id="email" />
+            <span class="error"></span>
+        </div>
+        <div class="input">
+            <label>Ramal</label>
+            <input type="number">
+            <span class="error"></span>
+        </div>   
+            <h4>Informações da Matrícula:</h4>
+            <div class="input">
+                <p>Turno:</p>
+        <input type="radio" id="Manhã" value="Manhã" required>
+        <label>Manhã</label>
+        <br>
+        <input type="radio" id="Tarde"  value="Tarde" required>
+        <label>Tarde</label>
+        <br>
+                <label>Atividade Extracurriculares:</label>
+                <input type="checkbox" name="" id="" value="">
+                <span class="error"></span>
+            </div>
+       
+        <button type="submit" class="enviar" >Enviar formulário</button>
+        <button type="reset" class="reset">Limpar Campos</button>
+    </form>
+
+</body>
+
+</html>
